@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings &amp; TV Controls"
+        android:textColor="#FFFFFFFF"
+        android:textSize="22sp"
+        android:fontFamily="@string/font_medium"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <GridLayout
+            android:id="@+id/settingsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- 1. Home Name -->
+            <include
+                android:id="@+id/cardHomeName"
+                layout="@layout/item_settings_card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp" />
+
+            <!-- 2. Cricket Pill -->
+            <include
+                android:id="@+id/cardCricket"
+                layout="@layout/item_settings_card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp" />
+
+            <!-- 3. Video Inputs -->
+            <include
+                android:id="@+id/cardInputs"
+                layout="@layout/item_settings_card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp" />
+
+            <!-- 4. Network -->
+            <include
+                android:id="@+id/cardNetwork"
+                layout="@layout/item_settings_card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp" />
+
+            <!-- 5. Bluetooth -->
+            <include
+                android:id="@+id/cardBluetooth"
+                layout="@layout/item_settings_card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp" />
+
+            <!-- 6. Reorder Apps -->
+            <include
+                android:id="@+id/cardReorder"
+                layout="@layout/item_settings_card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp" />
+
+            <!-- 7. Launcher Appearance -->
+            <include
+                android:id="@+id/cardAppearance"
+                layout="@layout/item_settings_card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp" />
+
+            <!-- 8. Android TV Settings -->
+            <include
+                android:id="@+id/cardSystemSettings"
+                layout="@layout/item_settings_card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp" />
+
+            <!-- 9. Power Menu -->
+            <include
+                android:id="@+id/cardPower"
+                layout="@layout/item_settings_card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp" />
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>
