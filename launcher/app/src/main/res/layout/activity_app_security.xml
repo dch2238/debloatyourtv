@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF101419"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="72dp"
+        android:paddingEnd="72dp"
+        android:paddingTop="38dp"
+        android:paddingBottom="38dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Security &amp; Screen Time"
+            android:textColor="#FFFFFFFF"
+            android:textSize="34sp" />
+
+        <!-- Master PIN -->
+        <TextView
+            android:id="@+id/btnChangePin"
+            style="@style/SettingsRow"
+            android:layout_marginTop="28dp"
+            android:text="Change Master PIN" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Set a 4-digit PIN required to open locked apps"
+            android:textColor="#FFACB8C1"
+            android:textSize="14sp" />
+
+        <!-- Locked Apps List -->
+        <TextView
+            android:id="@+id/btnSelectLockedApps"
+            style="@style/SettingsRow"
+            android:layout_marginTop="24dp"
+            android:text="Locked Apps Checklist" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Select which streaming &amp; media apps prompt for PIN"
+            android:textColor="#FFACB8C1"
+            android:textSize="14sp" />
+
+        <!-- Daily Watch Timer -->
+        <TextView
+            android:id="@+id/btnSetDailyTimer"
+            style="@style/SettingsRow"
+            android:layout_marginTop="24dp"
+            android:text="Daily Screen Time Limit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Configure maximum daily viewing duration per app"
+            android:textColor="#FFACB8C1"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>

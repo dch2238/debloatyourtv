@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="520dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/glass_panel"
+    android:paddingStart="36dp"
+    android:paddingEnd="36dp"
+    android:paddingTop="28dp"
+    android:paddingBottom="28dp"
+    android:gravity="center_horizontal"
+    android:elevation="16dp">
+
+    <TextView
+        android:id="@+id/lock_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter PIN"
+        android:textColor="#FFFFFFFF"
+        android:textSize="26sp"
+        android:fontFamily="@string/font_medium" />
+
+    <TextView
+        android:id="@+id/lock_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="This app is locked"
+        android:textColor="#B3FFFFFF"
+        android:textSize="15sp"
+        android:fontFamily="@string/font_body" />
+
+    <TextView
+        android:id="@+id/pin_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="22dp"
+        android:letterSpacing="0.4"
+        android:text="○   ○   ○   ○"
+        android:textColor="#FFFFFFFF"
+        android:textSize="32sp"
+        android:fontFamily="@string/font_medium" />
+
+    <!-- 3x4 TV Leanback Numeric Keypad -->
+    <LinearLayout
+        android:id="@+id/numpad_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Row 1: 1 2 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn_1" style="@style/PinButton" android:text="1" />
+            <Button android:id="@+id/btn_2" style="@style/PinButton" android:text="2" />
+            <Button android:id="@+id/btn_3" style="@style/PinButton" android:text="3" />
+        </LinearLayout>
+
+        <!-- Row 2: 4 5 6 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn_4" style="@style/PinButton" android:text="4" />
+            <Button android:id="@+id/btn_5" style="@style/PinButton" android:text="5" />
+            <Button android:id="@+id/btn_6" style="@style/PinButton" android:text="6" />
+        </LinearLayout>
+
+        <!-- Row 3: 7 8 9 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn_7" style="@style/PinButton" android:text="7" />
+            <Button android:id="@+id/btn_8" style="@style/PinButton" android:text="8" />
+            <Button android:id="@+id/btn_9" style="@style/PinButton" android:text="9" />
+        </LinearLayout>
+
+        <!-- Row 4: Clear 0 Backspace -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn_c" style="@style/PinButton" android:text="C" />
+            <Button android:id="@+id/btn_0" style="@style/PinButton" android:text="0" />
+            <Button android:id="@+id/btn_del" style="@style/PinButton" android:text="⌫" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Two-Option Bypass UI (Shown when daily timer limit is reached) -->
+    <LinearLayout
+        android:id="@+id/bypass_options_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:text="Choose Unlock Option"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:fontFamily="@string/font_medium" />
+
+        <Button
+            android:id="@+id/btn_bypass_day"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/cricket_pill_bg"
+            android:text="Bypass for the Day"
+            android:textColor="@color/pill_kicker_color"
+            android:textSize="16sp"
+            android:fontFamily="@string/font_medium"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/btn_extend_timer"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cricket_pill_bg"
+            android:text="Set Timer Again (+30 Mins)"
+            android:textColor="@color/pill_kicker_color"
+            android:textSize="16sp"
+            android:fontFamily="@string/font_medium"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pill_bg"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:text="@android:string/cancel"
+        android:textAllCaps="false"
+        android:textColor="#D9FFFFFF"
+        android:textSize="15sp" />
+
+</LinearLayout>

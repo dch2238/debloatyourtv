@@ -1,0 +1,14 @@
+# Xiaomi Mi TV (MiTV-MZTU0 / codename: river) - Android TV 14 (SDK 34)
+# Manufacturer Telemetry, Ad Daemons & PatchWall
+com.miui.tv.analytics
+com.xiaomi.statistic
+com.xiaomi.mitv.updateservice
+com.mitv.toolhouse
+com.mitv.overseaservice
+com.xiaomi.android.tvsetup.partnercustomizer
+com.xiaomi.tvqs.overseas.y24
+com.xiaomi.floatingframe
+com.mitv.tvhome.atv
+com.mitv.tvhome.oemtab
+com.mitv.tvhome.michannel
+com.mitv.tvhome.mitvplus
